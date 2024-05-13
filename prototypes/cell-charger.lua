@@ -106,7 +106,7 @@ local basicEntity = {
     crafting_categories = {"power-cell"},
     crafting_speed = 1,
     energy_source = {type = "electric", usage_priority = "tertiary"},
-    energy_usage = "120MW",
+    energy_usage = "500KW",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     vehicle_impact_sound = sounds.generic_impact,
