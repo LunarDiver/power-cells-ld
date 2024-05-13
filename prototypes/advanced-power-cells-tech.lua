@@ -10,7 +10,7 @@ data:extend({
             {type = "unlock-recipe", recipe = "personal-power-cell"}
         },
         prerequisites = {
-            "power-cells", "low-density-structure"
+            "power-cells", "low-density-structure", "electric-energy-accumulators"
         },
         unit = {
             count = 150,
