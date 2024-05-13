@@ -5,16 +5,18 @@ data:extend({
         icon = "__power-cells__/graphics/technology/capacitive-cell.png",
         icon_size = 256,
         effects = {
-            {type = "unlock-recipe", recipe = "capacitive-power-cell"},
-            {type = "unlock-recipe", recipe = "cell-charger"},
-            {type = "unlock-recipe", recipe = "basic-power-station"}
+            { type = "unlock-recipe", recipe = "capacitive-power-cell" },
+            { type = "unlock-recipe", recipe = "cell-charger" },
+            { type = "unlock-recipe", recipe = "basic-power-station" }
         },
-        prerequisites = nil,
+        prerequisites = { "battery" },
         unit = {
-            count = 30,
-            ingredients = {{"automation-science-pack", 1}},
-            time = 15
+            count = 50,
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 }
+            },
+            time = 30
         }
-        -- order = "c-e-b",
     }
 })

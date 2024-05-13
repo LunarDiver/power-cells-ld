@@ -10,16 +10,15 @@ data:extend({
             {type = "unlock-recipe", recipe = "personal-power-cell"}
         },
         prerequisites = {
-            "electric-energy-distribution-1", "power-cells", "battery"
+            "power-cells", "low-density-structure"
         },
         unit = {
-            count = 200,
+            count = 150,
             ingredients = {
                 {"automation-science-pack", 1}, {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1}
             },
-            time = 15
+            time = 30
         }
-        -- order = "c-e-b",
     }
 })
