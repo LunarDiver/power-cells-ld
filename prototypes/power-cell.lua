@@ -2,6 +2,7 @@ data:extend{
     {
         type = "recipe",
         name = "capacitive-power-cell",
+        ---@diagnostic disable-next-line: assign-type-mismatch
         category = "power-cell",
         subgroup = "raw-material",
         hide_from_player_crafting = true,
@@ -34,6 +35,7 @@ data:extend{
     {
         type = "recipe",
         name = "battery-power-cell",
+        ---@diagnostic disable-next-line: assign-type-mismatch
         category = "power-cell",
         subgroup = "raw-material",
         hide_from_player_crafting = true,
