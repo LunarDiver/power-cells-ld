@@ -2,11 +2,13 @@ local recipe = {
     type = "recipe",
     name = "personal-power-cell",
     category = "power-cell",
-    subgroup = "raw-material",
     hide_from_player_crafting = true,
     enabled = false,
     energy_required = 0.2,
-    ingredients = {{"battery", 2}},
+    ingredients = {
+        { "battery",    2 },
+        { "iron-plate", 4 }
+    },
     result = "personal-power-cell"
 }
 
