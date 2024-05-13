@@ -1,0 +1,8 @@
+require("prototypes.category")
+require("prototypes.power-cell")
+require("prototypes.cell-charger")
+require("prototypes.power-station")
+require("prototypes.advanced-power-station")
+require("prototypes.personal-power-cell")
+require("prototypes.power-cells-tech")
+require("prototypes.advanced-power-cells-tech")
