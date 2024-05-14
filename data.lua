@@ -1,4 +1,5 @@
 require("prototypes.category")
+require("prototypes.power-cell-empty")
 require("prototypes.power-cell")
 require("prototypes.cell-charger")
 require("prototypes.power-station")

@@ -1,29 +1,27 @@
-data:extend{
+data:extend {
     {
         type = "recipe",
-        name = "capacitive-power-cell",
+        name = "capacitive-power-cell-empty",
         ---@diagnostic disable-next-line: assign-type-mismatch
-        category = "power-cell",
+        category = "crafting",
         subgroup = "raw-material",
-        hide_from_player_crafting = true,
+        hide_from_player_crafting = false,
         order = "b[battery]-a[capacitive-power-cell]",
-        energy_required = 2,
+        energy_required = 0.5,
         enabled = false,
         ingredients = {
-            { "capacitive-power-cell-empty", 1 }
+            { "copper-plate", 2 },
+            { "battery",      1 }
         },
-        result = "capacitive-power-cell"
+        result = "capacitive-power-cell-empty"
     },
     {
         type = "item",
-        name = "capacitive-power-cell",
-        fuel_category = "power-cell",
-        fuel_value = "1MJ",
-        burnt_result = "capacitive-power-cell-empty",
+        name = "capacitive-power-cell-empty",
         icons = {
             {
                 icon = "__power-cells-ld__/graphics/icons/capacitive-cell.png",
-                tint = {r = 1, g = 1, b = 1, a = 1}
+                tint = { r = 0.8, g = 0.8, b = 0.8, a = 1 }
             }
         },
         icon_size = 64, icon_mipmaps = 4,
@@ -34,29 +32,27 @@ data:extend{
     },
     {
         type = "recipe",
-        name = "battery-power-cell",
+        name = "battery-power-cell-empty",
         ---@diagnostic disable-next-line: assign-type-mismatch
-        category = "power-cell",
+        category = "crafting",
         subgroup = "raw-material",
-        hide_from_player_crafting = true,
+        hide_from_player_crafting = false,
         order = "h[battery]",
-        energy_required = 20,
+        energy_required = 0.5,
         enabled = false,
         ingredients = {
-            { "battery-power-cell-empty", 1 }
+            { "battery",               5 },
+            { "low-density-structure", 1 }
         },
-        result = "battery-power-cell"
+        result = "battery-power-cell-empty"
     },
     {
         type = "item",
-        name = "battery-power-cell",
-        fuel_category = "power-cell",
-        fuel_value = "10MJ",
-        burnt_result = "battery-power-cell-empty",
+        name = "battery-power-cell-empty",
         icons = {
             {
                 icon = "__power-cells-ld__/graphics/icons/battery-power-cell.png",
-                tint = {r = 1, g = 1, b = 1, a = 1}
+                tint = { r = 0.8, g = 0.8, b = 0.8, a = 1 }
             }
         },
         icon_size = 64, icon_mipmaps = 4,

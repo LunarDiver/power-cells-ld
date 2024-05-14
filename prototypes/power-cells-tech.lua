@@ -6,6 +6,7 @@ data:extend({
         icon_size = 256,
         effects = {
             { type = "unlock-recipe", recipe = "capacitive-power-cell" },
+            { type = "unlock-recipe", recipe = "capacitive-power-cell-empty" },
             { type = "unlock-recipe", recipe = "cell-charger" },
             { type = "unlock-recipe", recipe = "basic-power-station" }
         },
