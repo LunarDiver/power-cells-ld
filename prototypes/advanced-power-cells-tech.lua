@@ -2,7 +2,7 @@ data:extend({
     {
         type = "technology",
         name = "advanced-power-cells",
-        icon = "__power-cells__/graphics/technology/battery-power-cell.png",
+        icon = "__power-cells-ld__/graphics/technology/battery-power-cell.png",
         icon_size = 256,
         effects = {
             {type = "unlock-recipe", recipe = "battery-power-cell"},

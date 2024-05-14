@@ -6,7 +6,7 @@ function accumulator_picture(tint, repeat_count)
     return {
         layers = {
             {
-                filename = "__power-cells__/graphics/entity/advanced-power-station/advanced-power-station.png",
+                filename = "__power-cells-ld__/graphics/entity/advanced-power-station/advanced-power-station.png",
                 priority = "high",
                 width = 66,
                 height = 94,
@@ -15,7 +15,7 @@ function accumulator_picture(tint, repeat_count)
                 tint = tint,
                 animation_speed = 1,
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/advanced-power-station/hr-advanced-power-station.png",
+                    filename = "__power-cells-ld__/graphics/entity/advanced-power-station/hr-advanced-power-station.png",
                     priority = "high",
                     width = 130,
                     height = 189,
@@ -66,7 +66,7 @@ local basicItem = {
     type = "item",
     name = basicName,
     icons = {
-        {icon = "__power-cells__/graphics/icons/advanced-power-station.png", tint = entityTint}
+        { icon = "__power-cells-ld__/graphics/icons/advanced-power-station.png", tint = entityTint }
     },
     icon_size = 64,
     icon_mipmaps = 4,
@@ -81,7 +81,7 @@ local basicEntity = {
     name = basicName,
     type = "burner-generator",
     icons = {
-        {icon = "__power-cells__/graphics/icons/advanced-power-station.png", tint = entityTint}
+        { icon = "__power-cells-ld__/graphics/icons/advanced-power-station.png", tint = entityTint }
     },
     icon_size = 64,
     icon_mipmaps = 4,
@@ -98,7 +98,7 @@ local basicEntity = {
     animation = {
         layers = {
             accumulator_picture(entityTint, 24), {
-                filename = "__power-cells__/graphics/entity/basic-power-station/power-station-working.png",
+            filename = "__power-cells-ld__/graphics/entity/basic-power-station/power-station-working.png",
                 priority = "high",
                 width = 90,
                 height = 100,
@@ -108,7 +108,7 @@ local basicEntity = {
                 draw_as_glow = true,
                 shift = util.by_pixel(0, -22),
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/basic-power-station/hr-power-station-working.png",
+                filename = "__power-cells-ld__/graphics/entity/basic-power-station/hr-power-station-working.png",
                     priority = "high",
                     width = 178,
                     height = 206,

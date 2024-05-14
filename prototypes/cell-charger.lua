@@ -6,7 +6,7 @@ function cell_charger_picture(tint, repeat_count)
     return {
         layers = {
             {
-                filename = "__power-cells__/graphics/entity/cell-charger/cell-charger.png",
+                filename = "__power-cells-ld__/graphics/entity/cell-charger/cell-charger.png",
                 priority = "high",
                 width = 129,
                 height = 100,
@@ -15,7 +15,7 @@ function cell_charger_picture(tint, repeat_count)
                 tint = tint,
                 -- animation_speed = 0.5,
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/cell-charger/hr-cell-charger.png",
+                    filename = "__power-cells-ld__/graphics/entity/cell-charger/hr-cell-charger.png",
                     priority = "high",
                     width = 239,
                     height = 219,
@@ -68,7 +68,7 @@ local basicItem = {
     name = basicName,
     icons = {
         {
-            icon = "__power-cells__/graphics/icons/cell-charger.png",
+            icon = "__power-cells-ld__/graphics/icons/cell-charger.png",
             tint = entityTint
         }
     },
@@ -86,7 +86,7 @@ local basicEntity = {
     name = basicName,
     icons = {
         {
-            icon = "__power-cells__/graphics/icons/cell-charger.png",
+            icon = "__power-cells-ld__/graphics/icons/cell-charger.png",
             tint = entityTint
         }
     },
@@ -121,7 +121,7 @@ local basicEntity = {
     animation = {
         layers = {
             cell_charger_picture(entityTint, 24), {
-                filename = "__power-cells__/graphics/entity/cell-charger/cell-charging.png",
+            filename = "__power-cells-ld__/graphics/entity/cell-charger/cell-charging.png",
                 priority = "high",
                 width = 88,
                 height = 104,
@@ -130,7 +130,7 @@ local basicEntity = {
                 draw_as_glow = true,
                 shift = util.by_pixel(-2, -19),
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/cell-charger/hr-cell-charging.png",
+                filename = "__power-cells-ld__/graphics/entity/cell-charger/hr-cell-charging.png",
                     priority = "high",
                     width = 170,
                     height = 210,

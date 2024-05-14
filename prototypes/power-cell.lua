@@ -22,7 +22,7 @@ data:extend{
         fuel_value = "1MJ",
         icons = {
             {
-                icon = "__power-cells__/graphics/icons/capacitive-cell.png",
+                icon = "__power-cells-ld__/graphics/icons/capacitive-cell.png",
                 tint = {r = 1, g = 1, b = 1, a = 1}
             }
         },
@@ -55,7 +55,7 @@ data:extend{
         fuel_value = "10MJ",
         icons = {
             {
-                icon = "__power-cells__/graphics/icons/battery-power-cell.png",
+                icon = "__power-cells-ld__/graphics/icons/battery-power-cell.png",
                 tint = {r = 1, g = 1, b = 1, a = 1}
             }
         },
@@ -63,6 +63,6 @@ data:extend{
         flags = {},
         subgroup = "raw-material",
         order = "b[personal-battery-cell]-a[battery-power-cell]",
-        stack_size = 50
+        stack_size = 10
     }
 }

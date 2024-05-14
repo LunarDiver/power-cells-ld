@@ -1,12 +1,9 @@
-local hit_effects = require("__base__/prototypes/entity/hit-effects")
-local sounds = require("__base__/prototypes/entity/sounds")
-
-local entityTint = {r = 1, g = 1, b = 1, a = 1}
+local entityTint = { r = 1, g = 1, b = 1, a = 1 }
 function accumulator_picture(tint, repeat_count)
     return {
         layers = {
             {
-                filename = "__power-cells__/graphics/entity/basic-power-station/basic-power-station.png",
+                filename = "__power-cells-ld__/graphics/entity/basic-power-station/basic-power-station.png",
                 priority = "high",
                 width = 66,
                 height = 94,
@@ -15,7 +12,7 @@ function accumulator_picture(tint, repeat_count)
                 tint = tint,
                 animation_speed = 1,
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/basic-power-station/hr-basic-power-station.png",
+                    filename = "__power-cells-ld__/graphics/entity/basic-power-station/hr-basic-power-station.png",
                     priority = "high",
                     width = 130,
                     height = 189,
@@ -68,7 +65,7 @@ local basicItem = {
     icon = "__base__/graphics/icons/electric-furnace.png",
     icons = {
         {
-            icon = "__power-cells__/graphics/icons/basic-power-station.png",
+            icon = "__power-cells-ld__/graphics/icons/basic-power-station.png",
             tint = entityTint
         }
     },
@@ -86,7 +83,7 @@ local basicEntity = {
     type = "burner-generator",
     icons = {
         {
-            icon = "__power-cells__/graphics/icons/basic-power-station.png",
+            icon = "__power-cells-ld__/graphics/icons/basic-power-station.png",
             tint = entityTint
         }
     },
@@ -106,7 +103,7 @@ local basicEntity = {
     animation = {
         layers = {
             accumulator_picture(entityTint, 24), {
-                filename = "__power-cells__/graphics/entity/basic-power-station/power-station-working.png",
+            filename = "__power-cells-ld__/graphics/entity/basic-power-station/power-station-working.png",
                 priority = "high",
                 width = 90,
                 height = 100,
@@ -116,7 +113,7 @@ local basicEntity = {
                 draw_as_glow = true,
                 shift = util.by_pixel(0, -22),
                 hr_version = {
-                    filename = "__power-cells__/graphics/entity/basic-power-station/hr-power-station-working.png",
+                filename = "__power-cells-ld__/graphics/entity/basic-power-station/hr-power-station-working.png",
                     priority = "high",
                     width = 178,
                     height = 206,
@@ -135,7 +132,8 @@ local basicEntity = {
         fuel_category = "power-cell",
         effectivity = 1,
         fuel_inventory_size = 1,
-        emissions_per_minute = 0
+        emissions_per_minute = 0,
+        burnt_inventory_size = 1
     },
     energy_source = {type = "electric", usage_priority = "secondary-output"},
     working_sound = {
