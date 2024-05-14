@@ -4,7 +4,7 @@ local recipe = {
     category = "power-cell",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.2,
+    energy_required = 40,
     ingredients = {
         { "battery",    2 },
         { "iron-plate", 4 }
