@@ -20,6 +20,7 @@ data:extend{
         name = "capacitive-power-cell",
         fuel_category = "power-cell",
         fuel_value = "1MJ",
+        burnt_result = "battery",
         icons = {
             {
                 icon = "__power-cells-ld__/graphics/icons/capacitive-cell.png",
@@ -53,6 +54,7 @@ data:extend{
         name = "battery-power-cell",
         fuel_category = "power-cell",
         fuel_value = "10MJ",
+        burnt_result = "battery",
         icons = {
             {
                 icon = "__power-cells-ld__/graphics/icons/battery-power-cell.png",
