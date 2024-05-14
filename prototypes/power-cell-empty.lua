@@ -6,7 +6,7 @@ data:extend {
         category = "crafting",
         subgroup = "raw-material",
         hide_from_player_crafting = false,
-        order = "b[battery]-a[capacitive-power-cell]",
+        order = "h[battery]",
         energy_required = 0.5,
         enabled = false,
         ingredients = {
@@ -58,7 +58,7 @@ data:extend {
         icon_size = 64, icon_mipmaps = 4,
         flags = {},
         subgroup = "raw-material",
-        order = "b[personal-battery-cell]-a[battery-power-cell]",
+        order = "h[battery]",
         stack_size = 10
     }
 }
