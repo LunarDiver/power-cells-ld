@@ -26,10 +26,10 @@ local item = {
 }
 
 local equip = {
-  type = "battery-equipment",
-  name = "personal-power-cell",
-  take_result = 'battery',
-  sprite = {
+    type = "battery-equipment",
+    name = "personal-power-cell",
+    take_result = 'personal-power-cell-empty',
+    sprite = {
         filename = "__power-cells-ld__/graphics/equipment/battery-equipment.png",
         width = 32,
         height = 64,
@@ -42,14 +42,14 @@ local equip = {
             scale = 0.5
         }
     },
-    shape = {width = 1, height = 2, type = "full"},
+    shape = { width = 1, height = 2, type = "full" },
     energy_source = {
         type = "electric",
         input_flow_limit = "0J",
         buffer_capacity = "20MJ",
         usage_priority = "tertiary"
     },
-    categories = {"armor"}
+    categories = { "armor" }
 }
 
-data:extend{recipe, item, equip}
+data:extend { recipe, item, equip }
