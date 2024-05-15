@@ -127,7 +127,8 @@ local basicEntity = {
         fuel_category = "power-cell",
         effectivity = 1,
         fuel_inventory_size = 1,
-        emissions_per_minute = 0
+        emissions_per_minute = 0,
+        burnt_inventory_size = 1
     },
     energy_source = {type = "electric", usage_priority = "secondary-output"},
     working_sound = {
